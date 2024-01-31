@@ -1,0 +1,235 @@
+.App{
+  background-color: white;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  height: 95vh;
+
+}
+ul{
+  list-style: none;
+}
+.btn{
+  color: white;
+  background-color: blue;
+  border: none;
+  outline: none;
+  padding: 3px 4px;
+  border-radius: 6px;
+}
+nav div:nth-child(1){
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  align-items: center;
+  flex: 1;
+}
+.menu{
+  display:none
+}
+.container{
+  margin:0 auto;
+  max-width: 1120px;
+}
+ul a{
+  color: white;
+}
+
+.task-container{
+  width: 80%;
+  height: 95vh;
+  /* box-shadow: 0.2rem 0.5rem black; */
+
+}
+.task-items{
+  height: 70%;
+}
+
+.options{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.divider{
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+.input-control input{
+  width:50%;
+  height:2rem;
+}
+.empty{
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.input-control{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* margin-top: 3rem; */
+}
+
+.active{
+  border-bottom: 3px solid green;
+
+}
+
+.list-items{
+  margin-top: 3rem;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.list-items>button{
+  align-self: flex-end;
+}
+.item-group{
+  overflow-y: auto;
+
+}
+
+.list-item{
+  display: grid;
+  grid-template-columns: 70% 20%;
+  margin-bottom: 1rem;
+  
+ 
+}
+
+
+.todo-icons{
+  display: flex;
+  gap: 0.7rem;
+  
+}
+.task-des{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.task-des div {
+  display: flex;
+  gap: 2rem;
+
+}
+.alert{
+  height: 1rem;
+  width: 80%;
+  text-align: center;
+  border-radius: 2rem;
+  margin-bottom:1rem;
+  margin-inline: auto;
+  color: white;
+  font-weight:bold ;
+}
+
+.alert-sucess{
+  background-color: green;
+}
+
+.alert-danger{
+  background-color: red;
+}
+
+.complete-icon svg{
+  background-color: green;
+}
+.view{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: 100vh;
+}
+.form-input{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap:0.4rem
+}
+.add-btn {
+  padding: 7px;
+  border-radius: 6px;
+  align-self: center;
+}
+textarea{
+  width: 40%;
+  height: 3rem;
+}
+.side-bar{
+  padding-top: 3rem;
+  box-shadow: 5rem 8rem white;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+.side-bar ul{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.side-bar li{
+  display: flex;
+  align-items: center;
+}
+ .menu-bar {
+   display: none
+ }
+@media screen and (max-width:760px) {
+  .view{
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+   .side-bar{
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    height: 95vh;
+    font-size: 1rem;
+    display: none;
+  }
+ 
+ .menu{
+  display: flex;
+ }
+ nav div:nth-child(1){
+  gap: 1rem;
+ }
+ .input-control input,textarea{
+  width: 100%;
+ }
+ h1{
+  font-size: 0.9rem;
+ }
+ h2{
+  font-size: 0.7rem;
+ }
+ h3{
+  font-size: 0.5rem;
+ }
+ .todo-icons{
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 11px;
+ }
+ .task-des div{
+  gap:0.2rem;
+  font-size: 14px;
+ }
+ .list-item{
+  grid-template-columns: 80% 20%;
+ }
+ nav div:nth-child(1){
+  flex: 0;
+ }
+ .task-items{
+  height: 67%;
+ }
+}
